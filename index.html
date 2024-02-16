@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/favoritColor.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="recived.php" method="POST">
+                <!-- Title -->
+                <div class="form-header">
+                    <div class="title">Seja bem vindo!</div>
+                </div>
+
+                <!-- Inputs -->
+                <div class="input-box">
+
+                    <!-- Name -->
+                    <div class="question">
+                        <label for="name">Primeiro Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu primeiro nome" checked>        
+                    </div>
+
+                    <!-- Lastname -->
+                    <div class="question">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome" checked>
+                    </div>
+
+                    <!-- Nick -->
+                    <div class="socialName-box">
+                        <p>Nick: </p>
+                        <button type="button" id="buttonName">Clique aqui</button>
+                        <p class="socialNameValue"></p>
+                        <button type="button" id="more">Outro</button>
+                    </div>
+
+                    <!-- email -->
+                    <div class="question">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" checked>    
+                    </div>    
+
+                    <!-- birthdate -->
+                    <div class="question">
+                        <div class="wrapper">
+                            <label for="days">Data de Nascimento:</label>
+                            <p class="birthdate">00/00/0000</p>
+                        </div>
+                        <input type="number" name="days" id="days" value='0' placeholder="Digite sua data de Nascimento" checked>
+                    </div> 
+
+                    <!-- Celular -->
+                    <div class="wrapper">
+                        <label for="rangeCel">Por favor selecione seu celular:</label>
+                        <span class="valor">(00) 0 0000-0000</span>
+                    </div>
+                    <input type="range" name="rangeCel" id="rangeCel" min="0" max="999999999999" checked>
+                    <div class="help-box">
+                        <button type="button" id="help">Ajuda aqui mano</button>
+                    </div>
+                    <div class="help_hidden">
+                        <p class="info-help">Move isso ae:</p>
+                        <div class="input-help">
+                            <input type="range" name="number3" value="0" id="number3" min="0" max="9" checked>
+                            <input type="range" name="number5" value="0" id="number5" min="0" max="9">
+                            <input type="range" name="ddd1" value="0" id="ddd1" min="0" max="9">
+                            <input type="range" name="number0" value="0" id="number0" min="0" max="9">
+                            <input type="range" name="number8" value="0" id="number8" min="0" max="9">    
+                            <input type="range" name="number4" value="0" id="number4" min="0" max="9">
+                            <input type="range" name="number1" value="0" id="number1" min="0" max="9">
+                            <input type="range" name="number7" value="0" id="number7" min="0" max="9">
+                            <input type="range" name="number2" value="0" id="number2" min="0" max="9">
+                            <input type="range" name="ddd0" value="0" id="ddd0" min="0" max="9">
+                            <input type="range" name="number6" value="0" id="number6" min="0" max="9">
+                        </div>
+                    </div>
+                    <!-- End celualar -->
+
+                    <!-- City -->
+                    <div class="city-box">
+                        <p>Selecione sua Cidade</p>
+                        <input type="number" name="numberCity" id="numberCity" value='0'>
+                        <div class="select-box">
+                            <p>Cidade selecionada:</p>
+                            <p class="selectCity"></p>
+                        </div>
+                    </div>
+                    <div class="listaMunicipios"></div>
+                    
+                    <!-- Favorit Color -->
+                    <div class="questionColor">
+                        <p for="fav-color">Sua cor favorita</p>
+                        <div class="colors">
+                            <div class="inputs">
+                                <input type="number" name="red"  id="red" placeholder="red" min="0" max="250" checked>
+                                <input type="number" name="green" id="green" placeholder="green" min="0" max="250" checked>
+                                <input type="number" name="blue" id="blue" placeholder="blue" min="0" max="250" checked>
+                            </div>
+                            <div class="show-box">
+                                <div class="show"></div>
+                                <span class="info-show">rgb(000, 000, 000)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time -->
+                    <p for="time">Time</p>
+                    <div class="time-box">
+                        <div class="times">
+                            <input type="radio" name="times" id="time0" checked>
+                            <label for="time0">Grêmio</label>
+                        </div>
+                        <div class="times">
+                            <input type="radio" name="times" id="time1">
+                            <label for="time1">Grêmio</label>
+                        </div>
+                    </div>  
+
+                    <!-- Bad School Subject -->
+                    <p for="bad_school_subject">Pior Matéria</p>
+                    <div class="bad_school_subject-wapper">
+                        <div class="optionMatery">
+                            <input type="radio" name="matery" id="matery0" checked>
+                            <label for="matery0">Quimica</label>    
+                        </div>
+                        <div class="optionMatery">
+                            <input type="radio" name="matery" id="matery1">
+                            <label for="matery1">Quimica</label>    
+                        </div>
+                        <div class="optionMatery">
+                            <input type="radio" name="matery" id="matery2">
+                            <label for="matery2">Quimica</label>    
+                        </div>
+                        <div class="optionMatery">
+                            <input type="radio" name="matery" id="matery3">
+                            <label for="matery3">Quimica</label>    
+                        </div>
+                    </div>
+
+                    <!-- Gender -->
+                    <p for="bad_school_subject">Gênero</p>
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="yes" value="yes" checked>
+                            <label for="yes">Sim</label> 
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="not" value="not">
+                            <label for="not">Não</label> 
+                        </div>
+                    </div>
+
+                    <!-- Free Text -->
+                    <p for="text">O que você mais gosta? (só vale resposta)</p>
+                    <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Vai ser anônimo, confia" checked></textarea>
+
+                    <button type="submit" name="submit" id="submit" >Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/number.js"></script>
+    <script type="text/javascript" src="js/city.js"></script>
+    <script type="text/javascript" src="js/colors.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

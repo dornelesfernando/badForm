@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    background-color: #000;
+    height: 100vh;
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    margin: 50px 0;
+    padding: 40px;
+    border-radius: 25px;
+    width: 700px;
+    background-color: #ffffff1c;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-header{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.input-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    padding: 20px;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.question label{
+    margin-bottom: 10px;
+}
+
+.question input{ 
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none ;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.socialName-box{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#buttonName{
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    margin-left: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px #00000037;
+}
+
+.socialNameValue{
+    font-weight: bolder; 
+    margin-left: 5px;
+}
+
+#more{
+    display: none;
+    margin-left: 15px;
+}
+
+.wrapper, .bad_school_subject-wapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.bad_school_subject-wapper, .time-box, .gender-group, .listaMunicipios{
+    margin: -10px 0 10px 0;
+    font-size: 16px;
+}
+
+.bad_school_subject-wapper label, .bad_school_subject-wapper input, .time-box label, .time-box input, .gender-input label, .gender-input input{
+    cursor: pointer;
+}
+
+.wrapper .birthdate{
+    margin-left: 15px;
+}
+
+.help-box{
+    display: flex;
+    justify-content: end;
+}
+
+.help-box #help{
+   font-size: 10px;
+   background: transparent;
+   color: #0000001a;
+   border: none;
+}
+
+.help_hidden{
+    display: none;
+}
+
+.info-help{
+    margin-bottom: 15px;
+}
+
+.input-help{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+.gender-input{
+    padding: 5px 30px;
+}
+
+textarea{
+    padding: 15px;
+    border-radius: 15px;
+    height: 50px;
+}
+
+#submit {
+    background-color: #00000032;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px; 
+}
+
+#submit:hover {
+    background-color: #000; 
+}
+
+.city-box{
+    display: flex;
+}
+
+.city-box input{
+    margin-left: 15px;
+    width: 50px;
+}
+
+.select-box{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.selectCity{
+    font-weight: bold;
+}
+
