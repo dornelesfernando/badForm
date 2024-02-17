@@ -20,11 +20,11 @@ const body = document.querySelector('body');
 
 function criaRandom(){
     const min = 1;
-    const max = 10;
+    const max = 31;
     let retNun;
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     if(randomNumber == max) {
-        randomNumber--;
+        randomNumber = randomNumber - 1;
     }else{
         retNun = randomNumber < 10 ? `0${randomNumber}` : randomNumber;
     }
