@@ -103,6 +103,9 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+[Gg]ame[Cc]apy/[Ll]ibrary/
+[Gg]ame[Cc]apy/[Bb]uild/
+[Gg]ame[Cc]apy/[Bb]uilds/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
