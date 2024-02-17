@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="form">
-            <form action="recived.php" method="POST">
+            <form action="/sucess" method="POST" netlify>
                 <!-- Title -->
                 <div class="form-header">
                     <div class="title">Seja bem vindo!</div>
@@ -24,13 +24,13 @@
                     <!-- Name -->
                     <div class="question">
                         <label for="name">Primeiro Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Digite seu primeiro nome" checked>        
+                        <input type="text" name="name" id="name" placeholder="Digite seu primeiro nome" required>        
                     </div>
 
                     <!-- Lastname -->
                     <div class="question">
                         <label for="lastname">Sobrenome</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome" checked>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome" required>
                     </div>
 
                     <!-- Nick -->
@@ -44,7 +44,7 @@
                     <!-- email -->
                     <div class="question">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" checked>    
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>    
                     </div>    
 
                     <!-- birthdate -->
@@ -53,7 +53,7 @@
                             <label for="days">Data de Nascimento:</label>
                             <p class="birthdate">00/00/0000</p>
                         </div>
-                        <input type="number" name="days" id="days" value='0' placeholder="Digite sua data de Nascimento" checked>
+                        <input type="number" name="days" id="days" value='0' placeholder="Digite sua data de Nascimento" required>
                     </div> 
 
                     <!-- Celular -->
@@ -61,14 +61,14 @@
                         <label for="rangeCel">Por favor selecione seu celular:</label>
                         <span class="valor">(00) 0 0000-0000</span>
                     </div>
-                    <input type="range" name="rangeCel" id="rangeCel" min="0" max="999999999999" checked>
+                    <input type="range" name="rangeCel" id="rangeCel" min="0" max="999999999999" required>
                     <div class="help-box">
                         <button type="button" id="help">Ajuda aqui mano</button>
                     </div>
                     <div class="help_hidden">
                         <p class="info-help">Move isso ae:</p>
                         <div class="input-help">
-                            <input type="range" name="number3" value="0" id="number3" min="0" max="9" checked>
+                            <input type="range" name="number3" value="0" id="number3" min="0" max="9" required>
                             <input type="range" name="number5" value="0" id="number5" min="0" max="9">
                             <input type="range" name="ddd1" value="0" id="ddd1" min="0" max="9">
                             <input type="range" name="number0" value="0" id="number0" min="0" max="9">
@@ -99,9 +99,9 @@
                         <p for="fav-color">Sua cor favorita</p>
                         <div class="colors">
                             <div class="inputs">
-                                <input type="number" name="red"  id="red" placeholder="red" min="0" max="250" checked>
-                                <input type="number" name="green" id="green" placeholder="green" min="0" max="250" checked>
-                                <input type="number" name="blue" id="blue" placeholder="blue" min="0" max="250" checked>
+                                <input type="number" name="red"  id="red" placeholder="red" min="0" max="250" required>
+                                <input type="number" name="green" id="green" placeholder="green" min="0" max="250" required>
+                                <input type="number" name="blue" id="blue" placeholder="blue" min="0" max="250" required>
                             </div>
                             <div class="show-box">
                                 <div class="show"></div>
@@ -114,7 +114,7 @@
                     <p for="time">Time</p>
                     <div class="time-box">
                         <div class="times">
-                            <input type="radio" name="times" id="time0" checked>
+                            <input type="radio" name="times" id="time0" required>
                             <label for="time0">Grêmio</label>
                         </div>
                         <div class="times">
@@ -127,7 +127,7 @@
                     <p for="bad_school_subject">Pior Matéria</p>
                     <div class="bad_school_subject-wapper">
                         <div class="optionMatery">
-                            <input type="radio" name="matery" id="matery0" checked>
+                            <input type="radio" name="matery" id="matery0" required>
                             <label for="matery0">Quimica</label>    
                         </div>
                         <div class="optionMatery">
@@ -148,7 +148,7 @@
                     <p for="bad_school_subject">Gênero</p>
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input type="radio" name="gender" id="yes" value="yes" checked>
+                            <input type="radio" name="gender" id="yes" value="yes" required>
                             <label for="yes">Sim</label> 
                         </div>
                         <div class="gender-input">
@@ -159,7 +159,7 @@
 
                     <!-- Free Text -->
                     <p for="text">O que você mais gosta? (só vale resposta)</p>
-                    <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Vai ser anônimo, confia" checked></textarea>
+                    <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Vai ser anônimo, confia" required></textarea>
                     
                     <div class="recaptcha-wrapper">
                         <div class="recaptcha">
